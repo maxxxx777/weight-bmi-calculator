@@ -1,0 +1,14 @@
+weight = int(input("weight:"))
+unit = input("(K)gs or (L)bs")
+if unit.upper() == "K":
+    converted = weight / 0.45
+    print("weight in Lbs is" + str(converted))
+else :
+    converted = weight * 0.45
+    print("weight in Kgs" + str(converted))
+if unit.upper() == "L":
+    converted = weight / 14
+    print("weight in stone is " + str(converted))
+height = input("how tall are you")
+bmi = float(weight) / (float(height)**2)
+print("your bmi is " + str(bmi))
